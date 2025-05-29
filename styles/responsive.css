@@ -1,0 +1,73 @@
+/* ----------------- */
+/* Responsive Design */
+/* ----------------- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+    padding: var(--space-md) var(--space-sm);
+    position: relative;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+  }
+  
+  .prompt-actions {
+    grid-template-columns: 1fr;
+  }
+  
+  .prompt-input {
+    min-height: 100px;
+  }
+  
+  h1 {
+    font-size: 1.1rem;
+  }
+  
+  .prompt-form {
+    padding: var(--space-md);
+  }
+  
+  .results-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .prompt-input {
+    padding: var(--space-sm);
+    padding-right: 48px;
+    min-height: 80px;
+  }
+  
+  .generate-btn {
+    padding: var(--space-sm) var(--space-md);
+  }
+  
+  .container {
+    padding: var(--space-sm);
+  }
+  
+  .loading-indicator {
+    margin: var(--space-lg) 0;
+  }
+  
+  .spinner {
+    width: 36px;
+    height: 36px;
+    border-width: 4px;
+  }
+}
+
+/* Fix dark theme transitions */
+.dark-theme .theme-toggle i {
+  transform: rotate(180deg);
+}
+
+.dark-theme .theme-toggle i::before {
+  content: '\f185';
+}
