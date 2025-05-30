@@ -1,5 +1,5 @@
 // API Configuration
-const API_KEY = `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`;
+const API_KEY = `ENTER YOUR API_KEY`;
 
 // Dimensions for different aspect ratios
 const DIMENSIONS = {
